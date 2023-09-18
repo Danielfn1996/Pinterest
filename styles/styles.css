@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  line-height: 0;
+}
+
+header {
+  padding: 16px;
+}
+
+.dvHeader {
+  width: 100%;
+  height: 80px;
+}
+
+.dvEnlace {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+}
+
+#dvLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.dvHref {
+  margin: 8px;
+  padding: 12px;
+  align-items: center;
+}
+
+.dvHref :hover {
+  background-color: #e2e2e2;
+  border-radius: 5px;
+}
+
+.textHeader {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3c4043;
+  width: 5rem;
+  height: 2rem;
+}
+
+.LogoPrincipal {
+  height: 2rem;
+  width: 7rem;
+}
+
+.dvInputBuscador {
+  flex: 1 1 auto;
+  border-radius: 25px;
+  border-color: #cdcdcd;
+  border-style: solid;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.IconInpunt {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.inptBuscador {
+  border: none;
+  outline: none;
+  width: 100%;
+  flex: 2 2;
+  background-color: transparent;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+    "ＭＳ Ｐゴシック", Arial, sans-serif;
+}
+
+.headerButtons {
+  display: flex;
+  flex-direction: row;
+  flex: 0.5 auto;
+}
+
+.btnButtonI {
+  height: 40px;
+  width: 70%;
+  border: 0;
+  border-radius: 25px;
+}
+
+.btnButtonII {
+  height: 40px;
+  width: 50%;
+  border: 0;
+  border-radius: 25px;
+  background-color: #e60023;
+  color: white;
+}
+
+.btnButtonI:hover {
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+.btnButtonII:hover {
+  cursor: pointer;
+  background-color: #890115;
+}
+
+.gridImages {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 12px;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.five {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.img_tamanio1 {
+  width: 100%;
+}
+.boton{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.gridImages:hover .boton {
+    opacity: 5;
+}
+.gridImages > div :hover{
+    cursor: pointer;
+
+}
+/* .dvHeader {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+/* 
+#itemsLinks {
+    width: 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+
+
+.dvHeaderFocus {
+    height: 1rem;
+    width: 3rem;
+}
+
+
+
+.LogoPrincipal {
+    height: 2rem;
+    width: 7rem;
+}
+
+#items-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 15px;
+
+}
+
+
+
+
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#Logo {
+    margin-bottom: 38px;
+
+}
+
+#input-search {
+    width: 500px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 24px;
+    padding: 5px 15px;
+    font-size: 10px;
+
+
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+#input-search:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-search {
+    gap: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-search:hover,
+#input-search:hover {
+    border: 1px solid #bcc2c6;
+}
+
+footer {
+    height: 20%;
+    background-color: #f2f2f2;
+
+
+}
+
+.dvFooter {
+    display: flex;
+    justify-content: space-evenly
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: #70757a;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid black;
+}
+
+footer p {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+    color: #70757a;
+    font-size: 14px;
+}
+
+
+#dvIzquierda {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 15px;
+
+}
+
+#dvDerecha {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    list-style: none;
+    gap: 15px;
+
+} */
